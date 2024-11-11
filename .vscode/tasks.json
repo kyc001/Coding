@@ -1,0 +1,42 @@
+{
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "g++.exe build active file",
+            "command": "g++",
+            "args": [
+                "-Wall",
+                "-Wextra",
+                "-Wshadow",
+                "-Wunused",
+                "-g",
+                "${fileDirname}\\${fileBasenameNoExtension}.cpp",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "D:\\Dev-C++\\Dev-Cpp\\MinGW64\\bin"
+            }
+        },
+        {
+            "type": "shell",
+            "label": "g++.exe build active file with O2",
+            "command": "g++",
+            "args": [
+                "-Wall",
+                "-Wextra",
+                "-Wshadow",
+                "-Wunused",
+                "-O2",
+                "-g",
+                "${fileDirname}\\${fileBasenameNoExtension}.cpp",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "D:\\Dev-C++\\Dev-Cpp\\MinGW64\\bin"
+            }
+        }
+    ],
+    "version": "2.0.0"
+}
