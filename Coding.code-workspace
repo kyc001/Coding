@@ -1,0 +1,24 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+    "settings": {
+        "files.associations": {
+            "*.tcc": "cpp",
+            "sstream": "cpp",
+            "regex": "cpp",
+            "valarray": "cpp",
+            "thread": "cpp",
+            "random": "cpp",
+            "chrono": "cpp",
+            "limits": "cpp",
+            "bitset": "cpp",
+            "algorithm": "cpp",
+            "functional": "cpp",
+            "numeric": "cpp",
+            "list": "cpp"
+        }
+    }
+}
