@@ -3,8 +3,8 @@
         {
             "name": "Win32",
             "includePath": [
-                "D:\\mingw64\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\8.1.0\\include/**",
                 "D:\\Dev-C++\\Dev-Cpp\\MinGW64\\lib\\gcc\\x86_64-w64-mingw32\\4.9.2\\include\\c++/**",
+                "D:\\MinGW\\lib\\gcc\\mingw32\\9.2.0\\include/**",
                 "D:/Dev-C++/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32/**"
             ],
             "defines": [
@@ -12,9 +12,10 @@
                 "UNICODE",
                 "_UNICODE"
             ],
-            "cStandard": "c11",
-            "intelliSenseMode": "windows-gcc-x64",
-            "compilerPath": "D:/mingw64/mingw64/bin/gcc.exe"
+            "windowsSdkVersion": "10.0.19041.0",
+            "compilerPath": "D:\\MinGW\\bin\\gcc.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++17"
         }
     ],
     "version": 4
