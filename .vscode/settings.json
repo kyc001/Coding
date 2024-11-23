@@ -69,7 +69,11 @@
         "thread": "cpp",
         "typeindex": "cpp",
         "typeinfo": "cpp",
-        "valarray": "cpp"
+        "valarray": "cpp",
+        "any": "cpp",
+        "bit": "cpp",
+        "charconv": "cpp",
+        "variant": "cpp"
     },
     "code-runner.runInTerminal": true,//在控制台运行代码，防止乱码和不能输入
     "code-runner.executorMap": {
