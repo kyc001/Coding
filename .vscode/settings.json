@@ -73,7 +73,8 @@
         "any": "cpp",
         "bit": "cpp",
         "charconv": "cpp",
-        "variant": "cpp"
+        "variant": "cpp",
+        //"*.groovy": "cpp"
     },
     "code-runner.runInTerminal": true,//在控制台运行代码，防止乱码和不能输入
     "code-runner.executorMap": {
@@ -94,5 +95,13 @@
     "code-runner.respectShebang": false,//我是Windows系统所以不需要按shebang来运行
     "code-runner.ignoreSelection": true,
     "C_Cpp.errorSquiggles": "enabled", //禁用“运行选中部分的代码”功能（个人喜好，感觉这个功能很鸡肋）
+    "java.home": "D:\\Java",//Java的安装路径
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-11",
+            "path": "D:\\Java",
+            "default": true
+        },
+    ]
     //需要注意的是，所有命令前都有一个空格，用来“喂给”上一次运行结尾的“请按任意键继续. . .”
 }

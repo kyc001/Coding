@@ -4,7 +4,20 @@
     // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-
+        {
+            "type": "java",
+            "name": "JavaEnvironmentTest",
+            "request": "launch",
+            "mainClass": "JavaEnvironmentTest",
+            "projectName": "Coding_1a167743"
+        },
+        {
+            "type": "java",
+            "name": "hello",
+            "request": "launch",
+            "mainClass": "hello",
+            "projectName": "Coding_1a167743"
+        },
         {
             "name": "(Windows) Launch",
             "type": "cppvsdbg",
@@ -75,6 +88,6 @@
             "environment": [],
             "externalConsole": true,
             "preLaunchTask": "g++.exe build active file with O2"
-        },
+        }
     ],
 }
