@@ -95,11 +95,11 @@
     "code-runner.respectShebang": false,//我是Windows系统所以不需要按shebang来运行
     "code-runner.ignoreSelection": true,
     "C_Cpp.errorSquiggles": "enabled", //禁用“运行选中部分的代码”功能（个人喜好，感觉这个功能很鸡肋）
-    "java.home": "D:\\Java",//Java的安装路径
+    "java.home": "D:\\jdk",//Java的安装路径
     "java.configuration.runtimes": [
         {
             "name": "JavaSE-11",
-            "path": "D:\\Java",
+            "path": "D:\\jdk",
             "default": true
         },
     ]

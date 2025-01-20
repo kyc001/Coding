@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "SLList",
+            "request": "launch",
+            "mainClass": "SLList",
+            "projectName": "Coding_1a167743"
+        },
+        {
+            "type": "java",
+            "name": "IntList",
+            "request": "launch",
+            "mainClass": "IntList",
+            "projectName": "Coding_1a167743"
+        },
+        {
+            "type": "java",
+            "name": "Car",
+            "request": "launch",
+            "mainClass": "Car",
+            "projectName": "Coding_1a167743"
+        },
+        {
+            "type": "java",
+            "name": "LargerDemo",
+            "request": "launch",
+            "mainClass": "LargerDemo",
+            "projectName": "Coding_1a167743"
+        },
+        {
+            "type": "java",
+            "name": "HelloWorld",
+            "request": "launch",
+            "mainClass": "HelloWorld",
+            "projectName": "Coding_1a167743"
+        },
+        {
+            "type": "java",
             "name": "JavaEnvironmentTest",
             "request": "launch",
             "mainClass": "JavaEnvironmentTest",
