@@ -3,9 +3,16 @@
         {
             "name": "Win32",
             "includePath": [
-                "D:/Dev-C++/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/**",
-                "D:/MinGW/lib/gcc/mingw32/9.2.0/include/**",
-                "D:/Dev-C++/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32/**"
+                "${workspaceFolder}/**",
+                "C:/msys64/**",
+                "C:/msys64/mingw64/include/**",
+                "C:/msys64/mingw64/include/c++/14.2.0/",
+                "C:\\msys64\\mingw64\\include\\c++\\14.2.0",
+                "C:/msys64/mingw64/include/c++/14.2.0/**",
+                "C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/**",
+                "C:/msys64/mingw64/include/c++/14.2.0/backward/**",
+                "C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/**",
+                "C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/**"
             ],
             "defines": [
                 "_DEBUG",
@@ -13,7 +20,7 @@
                 "_UNICODE"
             ],
             "windowsSdkVersion": "10.0.19041.0",
-            "compilerPath": "D:\\MinGW\\bin\\gcc.exe",
+            "compilerPath": "C:/msys64/mingw64/bin/gcc.exe",
             "cStandard": "c17",
             "cppStandard": "c++17",
             "intelliSenseMode": "gcc-x64"

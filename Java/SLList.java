@@ -9,13 +9,12 @@ public class SLList {
         }
     }
 
-    private IntNode sentinel;
+    private final IntNode sentinel;
     private int size;
-
-    private static void lectureQuestion() {
-        SLList L = new SLList();
-        IntNode n = new IntNode(5, null);
-    }
+    // private static void lectureQuestion() {
+    //     SLList L = new SLList();
+    //     IntNode n = new IntNode(5, null);
+    // }
 
     public SLList() {
         sentinel = new IntNode(63, null);

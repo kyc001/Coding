@@ -1,42 +1,27 @@
 {
+    "version": "2.0.0",
     "tasks": [
         {
-            "type": "shell",
-            "label": "g++.exe build active file",
-            "command": "g++",
+            "type": "cppbuild",
+            "label": "gcc.exe build active file",
+            "command": "C:/msys64/mingw64/bin/gcc.exe",
             "args": [
-                "-Wall",
-                "-Wextra",
-                "-Wshadow",
-                "-Wunused",
+                "-fdiagnostics-color=always",
                 "-g",
-                "${fileDirname}\\${fileBasenameNoExtension}.cpp",
+                "*.c",
                 "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+                "${workspaceFolder}\\${workspaceRootFolderName}.exe",
+                "-I",
+                "C:/msys64/mingw64/include/c++/14.2.0/"
             ],
             "options": {
-                "cwd": "D:\\Dev-C++\\Dev-Cpp\\MinGW64\\bin"
-            }
-        },
-        {
-            "type": "shell",
-            "label": "g++.exe build active file with O2",
-            "command": "g++",
-            "args": [
-                "-Wall",
-                "-Wextra",
-                "-Wshadow",
-                "-Wunused",
-                "-O2",
-                "-g",
-                "${fileDirname}\\${fileBasenameNoExtension}.cpp",
-                "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+                "cwd": "C:/msys64/mingw64/bin"
+            },
+            "problemMatcher": [
+                "$gcc"
             ],
-            "options": {
-                "cwd": "D:\\Dev-C++\\Dev-Cpp\\MinGW64\\bin"
-            }
+            "group": "build",
+            "detail": "compiler: C:/msys64/mingw64/bin/gcc.exe",
         }
-    ],
-    "version": "2.0.0"
+    ]
 }
