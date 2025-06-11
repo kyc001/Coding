@@ -1,5 +1,6 @@
 {
     "files.associations": {
+        "*.java": "java",
         "array": "cpp",
         "atomic": "cpp",
         "*.tcc": "cpp",
@@ -74,7 +75,26 @@
         "bit": "cpp",
         "charconv": "cpp",
         "variant": "cpp",
-        //"*.groovy": "cpp"
+        "barrier": "cpp",
+        "compare": "cpp",
+        "concepts": "cpp",
+        "coroutine": "cpp",
+        "expected": "cpp",
+        "source_location": "cpp",
+        "format": "cpp",
+        "generator": "cpp",
+        "latch": "cpp",
+        "numbers": "cpp",
+        "print": "cpp",
+        "ranges": "cpp",
+        "semaphore": "cpp",
+        "span": "cpp",
+        "spanstream": "cpp",
+        "stacktrace": "cpp",
+        "stdfloat": "cpp",
+        "stop_token": "cpp",
+        "syncstream": "cpp",
+        "text_encoding": "cpp"
     },
     "code-runner.runInTerminal": true,//在控制台运行代码，防止乱码和不能输入
     "code-runner.executorMap": {
