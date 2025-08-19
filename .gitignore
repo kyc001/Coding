@@ -1,5 +1,4 @@
 # 忽略 VS Code 编辑器的临时文件和数据库
-.vscode/
 
 # 忽略所有编译生成的可执行文件 (.exe)
 *.exe
@@ -7,8 +6,4 @@
 # 忽略 VS Code 的 Code Runner 插件生成的临时文件
 tempCodeRunnerFile.cpp
 tempCodeRunnerFile.exe
-.vscode/BROWSE.VC.DB-shm
 
-.vscode/BROWSE.VC.DB
-
-.vscode/BROWSE.VC.DB

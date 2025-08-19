@@ -33,14 +33,9 @@
             "browse": {
                 "path": [
                     "${workspaceFolder}/**",
-                    "C:/msys64/mingw64/include/**",
-                    "C:/msys64/mingw64/include",
-                    "C:/msys64/mingw64/include/c++/14.2.0",
-                    "C:/msys64/mingw64/include/c++/14.2.0/bits",
-                    "C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include"
+                    "C:/msys64/mingw64/include/**"
                 ],
-                "limitSymbolsToIncludedHeaders": false,
-                "databaseFilename": "${workspaceFolder}/.vscode/browse.vc.db"
+                "limitSymbolsToIncludedHeaders": true
             }
         }
     ],
