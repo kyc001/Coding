@@ -104,8 +104,8 @@
         /*这是每种语言运行时所执行命令的对应表，因为笔者使用的语言有限，这里只列出了javascript、python和windows批处理的命令，其他语言的命令可自行添加*/
         /*笔者其他博客中可能会有关于对此设置项的添加或删改的内容*/
         // "code-runner.executorMap": { // 在这个设置里找到 "cpp" 和 "c"
-        "cpp": "cls && cd /d $dir && \"C:/msys64/mingw64/bin/g++.exe\" -g $fullFileName -static-libgcc -std=c++17 -fexec-charset=GBK -o \"$fileNameWithoutExt.exe\" && .\\$fileNameWithoutExt.exe",
-        "c": "cls && cd /d $dir && \"C:/msys64/mingw64/bin/gcc.exe\" -g $fullFileName -static-libgcc -std=c11 -fexec-charset=GBK -o \"$fileNameWithoutExt.exe\" && .\\$fileNameWithoutExt.exe"
+        "cpp": " cls && cd /d $dir && \"C:/msys64/mingw64/bin/g++.exe\" -g $fullFileName -static-libgcc -std=c++17 -fexec-charset=GBK -o \"$fileNameWithoutExt.exe\" && \".\\$fileNameWithoutExt.exe\"",
+        "c": " cls && cd /d $dir && \"C:/msys64/mingw64/bin/gcc.exe\" -g $fullFileName -static-libgcc -std=c11 -fexec-charset=GBK -o \"$fileNameWithoutExt.exe\" && .\\$fileNameWithoutExt.exe"
         // }
     },
     "code-runner.saveFileBeforeRun": true, //运行前自动保存
@@ -113,6 +113,25 @@
     "code-runner.respectShebang": false, //我是Windows系统所以不需要按shebang来运行
     "code-runner.ignoreSelection": true,
     "C_Cpp.errorSquiggles": "enabled", //禁用“运行选中部分的代码”功能（个人喜好，感觉这个功能很鸡肋）
+    "C_Cpp.intelliSenseEngine": "default",
+    "C_Cpp.default.compilerPath": "C:/msys64/mingw64/bin/g++.exe",
+    "C_Cpp.default.cppStandard": "c++17",
+    "C_Cpp.default.intelliSenseMode": "windows-gcc-x64",
+    "C_Cpp.default.includePath": [
+        "C:/msys64/mingw64/include/c++/14.2.0",
+        "C:/msys64/mingw64/include/c++/14.2.0/bits",
+        "C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32",
+        "C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits",
+        "C:/msys64/mingw64/include/c++/14.2.0/backward",
+        "C:/msys64/mingw64/include",
+        "C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include",
+        "C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include-fixed",
+        "${workspaceFolder}/**"
+    ],
+    "C_Cpp.default.forcedInclude": [],
+    "C_Cpp.default.browse.limitSymbolsToIncludedHeaders": false,
+    "C_Cpp.loggingLevel": "Information",
+    "C_Cpp.configurationWarnings": "enabled",
     "java.jdt.ls.java.home": "D:\\jdk", //Java的安装路径
     "java.configuration.runtimes": [
         {
@@ -123,5 +142,6 @@
     ],
     //需要注意的是，所有命令前都有一个空格，用来“喂给”上一次运行结尾的“请按任意键继续. . .”
     "code-runner.fileDirectoryAsCwd": true,
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
     "python.terminal.executeInFileDir": true
 }

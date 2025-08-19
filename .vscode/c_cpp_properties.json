@@ -1,104 +1,47 @@
-// {
-//     "configurations": [
-//         {
-//             "name": "Win32",
-//             "includePath": [
-//                 "${workspaceFolder}/**",
-//                 "D:/MinGW/**",
-//                 "D:/MinGW/lib/gcc/x86_64-w64-mingw32/14.2.0/include/**",
-//                 "C:/msys64/**",
-//                 "C:/msys64/mingw64/include/**",
-//                 "C:/msys64/mingw64/include/c++/14.2.0/",
-//                 "C:\\msys64\\mingw64\\include\\c++\\14.2.0",
-//                 "C:/msys64/mingw64/include/c++/14.2.0/**",
-//                 "C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/**",
-//                 "C:/msys64/mingw64/include/c++/14.2.0/backward/**",
-//                 "C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/**",
-//                 "C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/**"
-//             ],
-//             "defines": [
-//                 "_DEBUG",
-//                 "UNICODE",
-//                 "_UNICODE"
-//             ],
-//             "windowsSdkVersion": "10.0.19041.0",
-//             "compilerPath": "C:/msys64/mingw64/bin/gcc.exe",
-//             "cStandard": "c17",
-//             "cppStandard": "c++17",
-//             "intelliSenseMode": "gcc-x64"
-//         }
-//     ],
-//     "version": 4
-// // }
-// {
-//     "configurations": [
-//         {
-//             "name": "Win32-GCC",
-//             "includePath": [
-//                 "${workspaceFolder}/**"
-//             ],
-//             "defines": [
-//                 "_DEBUG",
-//                 "UNICODE",
-//                 "_UNICODE"
-//             ],
-//             // 关键：指定您的主编译器路径
-//             // 插件会自动查询此编译器以获取所有系统头文件的正确路径
-//             "compilerPath": "C:/msys64/mingw64/bin/g++.exe",
-//             "cStandard": "c17",
-//             "cppStandard": "c++17",
-//             "intelliSenseMode": "windows-gcc-x64"
-//         }
-//     ],
-//     "version": 4
-// }
-// {
-//     "configurations": [
-//         {
-//             "name": "Win32-GCC",
-//             "includePath": [
-//                 "${workspaceFolder}/**",
-//                 // --- 手动添加 MSYS2 MinGW64 的系统头文件路径 ---
-//                 "C:/msys64/mingw64/include",
-//                 "C:/msys64/mingw64/include/c++/14.2.0",
-//                 "C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32",
-//                 "C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include"
-//             ],
-//             "defines": [
-//                 "_DEBUG",
-//                 "UNICODE",
-//                 "_UNICODE"
-//             ],
-//             // compilerPath 仍然保留，它对编译和调试很重要
-//             "compilerPath": "C:/msys64/mingw64/bin/g++.exe",
-//             "cStandard": "c17",
-//             "cppStandard": "c++17",
-//             "intelliSenseMode": "windows-gcc-x64"
-//         }
-//     ],
-//     "version": 4
-// }
 {
     "configurations": [
         {
             "name": "Win32-GCC",
             "includePath": [
-                "${workspaceFolder}/**",
-                // --- 使用通配符递归搜索整个 MinGW-w64 include 目录 ---
-                // 这条路径会包含所有C和C++的标准库头文件
-                "C:/msys64/mingw64/include/**",
-                "C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/**"
+                "C:/msys64/mingw64/include/c++/14.2.0",
+                "C:/msys64/mingw64/include/c++/14.2.0/bits",
+                "C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32",
+                "C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits",
+                "C:/msys64/mingw64/include/c++/14.2.0/backward",
+                "C:/msys64/mingw64/include",
+                "C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include",
+                "C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include-fixed",
+                "${workspaceFolder}",
+                "${workspaceFolder}/**"
             ],
             "defines": [
                 "_DEBUG",
                 "UNICODE",
-                "_UNICODE"
+                "_UNICODE",
+                "__GNUC__=14",
+                "__GNUG__=14",
+                "__cplusplus=201703L"
             ],
-            // compilerPath 仍然保留，它对编译和调试很重要
             "compilerPath": "C:/msys64/mingw64/bin/g++.exe",
             "cStandard": "c17",
             "cppStandard": "c++17",
-            "intelliSenseMode": "windows-gcc-x64"
+            "intelliSenseMode": "windows-gcc-x64",
+            "compilerArgs": [
+                "-std=c++17"
+            ],
+            "forcedInclude": [],
+            "browse": {
+                "path": [
+                    "${workspaceFolder}/**",
+                    "C:/msys64/mingw64/include/**",
+                    "C:/msys64/mingw64/include",
+                    "C:/msys64/mingw64/include/c++/14.2.0",
+                    "C:/msys64/mingw64/include/c++/14.2.0/bits",
+                    "C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include"
+                ],
+                "limitSymbolsToIncludedHeaders": false,
+                "databaseFilename": "${workspaceFolder}/.vscode/browse.vc.db"
+            }
         }
     ],
     "version": 4
