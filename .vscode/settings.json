@@ -144,5 +144,25 @@
     //需要注意的是，所有命令前都有一个空格，用来“喂给”上一次运行结尾的“请按任意键继续. . .”
     "code-runner.fileDirectoryAsCwd": true,
     "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    // C++ 代码格式化配置
+    "C_Cpp.formatting": "clangFormat",
+    "C_Cpp.clang_format_style": "{ BasedOnStyle: Google, IndentWidth: 4, TabWidth: 4, UseTab: Never, ColumnLimit: 100, SpaceAfterCStyleCast: true, SpaceBeforeParens: Never, BreakBeforeBraces: Attach, AllowShortIfStatementsOnASingleLine: true, AllowShortLoopsOnASingleLine: true, AllowShortFunctionsOnASingleLine: Empty }",
+    // 自动格式化
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.formatOnPaste": true,
+    // 针对 C++ 的特殊设置
+    "[cpp]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools",
+        "editor.tabSize": 4,
+        "editor.insertSpaces": true,
+        "editor.detectIndentation": false
+    },
+    "[c]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools",
+        "editor.tabSize": 4,
+        "editor.insertSpaces": true,
+        "editor.detectIndentation": false
+    },
     "python.terminal.executeInFileDir": true
 }
